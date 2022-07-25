@@ -1,0 +1,49 @@
+{
+  "name": "razxc/dotenv",
+  "type": "library",
+  "description": "Parser for env-files with bash syntax compatibility and zero-dependencies",
+  "keywords": ["parser", "environment", "shell", "bash"],
+  "authors": [
+    {
+      "name": "Alexandr Haritonov",
+      "email": "razxc@yandex.ru"
+    }
+  ],
+  "require": {
+    "php": "~7.3|~8.0",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~9.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "net\\lapaphp\\dotenv\\": "src/"
+    }
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit",
+      "@composer validate --strict"
+    ],
+    "cs": [
+      "tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src --rules=@PSR12 --diff --dry-run",
+      "tools/php-cs-fixer/vendor/bin/php-cs-fixer fix tests --rules=@PSR12 --diff --dry-run"
+    ],
+    "cs-fix": [
+      "tools/php-cs-fixer/vendor/bin/php-cs-fixer fix src --rules=@PSR12",
+      "tools/php-cs-fixer/vendor/bin/php-cs-fixer fix test --rules=@PSR12"
+    ],
+    "cs-install": [
+      "mkdir --parents tools/php-cs-fixer",
+      "composer require --working-dir=tools/php-cs-fixer friendsofphp/php-cs-fixer"
+    ]
+  },
+  "scripts-descriptions": {
+    "test": "-- Run testing",
+    "cs": "-- Check code standards",
+    "cs-fix": "-- Check and autofix code standards",
+    "cs-install": "-- Install code qulity tool: 'tools/php-cs-fixer/vendor/bin/php-cs-fixer'"
+  },
+  "license": "UNLICENSE"
+}
