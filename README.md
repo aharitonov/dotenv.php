@@ -4,6 +4,7 @@
 [![Total Downloads](http://poser.pugx.org/razxc/dotenv/downloads)](https://packagist.org/packages/razxc/dotenv)
 [![License](http://poser.pugx.org/razxc/dotenv/license)](https://packagist.org/packages/razxc/dotenv)
 [![PHP Version Require](http://poser.pugx.org/razxc/dotenv/require/php)](https://packagist.org/packages/razxc/dotenv)
+[![codecov](https://codecov.io/gh/aharitonov/dotenv.php/branch/main/graph/badge.svg?token=VKCV14ZK73)](https://codecov.io/gh/aharitonov/dotenv.php)
 
 
 The PHP library provides pure dot-env parser
