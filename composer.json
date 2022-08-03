@@ -45,5 +45,5 @@
     "cs-fix": "-- Check and autofix code standards",
     "cs-install": "-- Install code qulity tool: 'tools/php-cs-fixer/vendor/bin/php-cs-fixer'"
   },
-  "license": "UNLICENSE"
+  "license": "MIT"
 }
