@@ -2,7 +2,7 @@
   "name": "razxc/dotenv",
   "type": "library",
   "description": "Parser for env-files with bash syntax compatibility and zero-dependencies",
-  "keywords": ["parser", "environment", "shell", "bash"],
+  "keywords": ["env", "dotenv", "environment", "parser", "shell", "bash"],
   "authors": [
     {
       "name": "Alexandr Haritonov",
